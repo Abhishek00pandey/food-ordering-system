@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: foodOrderingSystem
+  datasource:
+    url: jdbc:postgresql://localhost:5432/foodOrdering
+    username: postgres
+    password: Abhi@123
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
