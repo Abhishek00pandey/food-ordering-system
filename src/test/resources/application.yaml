@@ -22,3 +22,5 @@ app:
     email: admin@test.local
     password: test-admin-pw
     name: Test Admin
+  cors:
+    allowed-origins: http://localhost:3000

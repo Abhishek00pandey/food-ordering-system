@@ -1,3 +1,6 @@
+server:
+  port: ${PORT:8080}
+
 spring:
   application:
     name: foodOrderingSystem
@@ -22,3 +25,5 @@ app:
     email: ${APP_ADMIN_EMAIL:admin@food.com}
     password: ${APP_ADMIN_PASSWORD}
     name: ${APP_ADMIN_NAME:Admin}
+  cors:
+    allowed-origins: ${ALLOWED_ORIGINS:http://localhost:3000}
