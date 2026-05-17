@@ -1,0 +1,54 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: food-db
+    environment:
+      POSTGRES_DB: foodOrdering
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      # host 5433 -> container 5432 (avoids conflict with any local Postgres on 5432)
+      - "5433:5432"
+    volumes:
+      - food_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: food-backend
+    environment:
+      DB_URL: jdbc:postgresql://db:5432/foodOrdering
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+      JWT_SECRET: dev-only-jwt-secret-replace-in-production-with-strong-random-value-abc
+      APP_ADMIN_EMAIL: admin@food.com
+      APP_ADMIN_PASSWORD: admin123
+      APP_ADMIN_NAME: Admin
+      ALLOWED_ORIGINS: http://localhost:3000
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./food-frontend
+      dockerfile: Dockerfile
+      args:
+        # Browser-visible URL — must be reachable from the user's host, not from inside the docker network
+        REACT_APP_API_URL: http://localhost:8080/api
+    container_name: food-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  food_db_data:
