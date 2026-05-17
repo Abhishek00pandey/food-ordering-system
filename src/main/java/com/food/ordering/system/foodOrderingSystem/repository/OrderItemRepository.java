@@ -1,8 +1,10 @@
 package com.food.ordering.system.foodOrderingSystem.repository;
 
-import com.food.ordering.system.foodOrderingSystem.enity.OrderItem;
+import com.food.ordering.system.foodOrderingSystem.entity.OrderItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface OrderItemRepository extends JpaRepository<OrderItem, Long> {
+import java.util.List;
 
+public interface OrderItemRepository extends JpaRepository<OrderItem, Long> {
+    List<OrderItem> findByOrderId(Long orderId);
 }

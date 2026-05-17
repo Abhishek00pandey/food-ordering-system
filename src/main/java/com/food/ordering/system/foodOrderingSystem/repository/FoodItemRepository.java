@@ -1,6 +1,6 @@
 package com.food.ordering.system.foodOrderingSystem.repository;
 
-import com.food.ordering.system.foodOrderingSystem.enity.FoodItem;
+import com.food.ordering.system.foodOrderingSystem.entity.FoodItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

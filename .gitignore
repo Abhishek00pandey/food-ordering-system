@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Local dev secrets ###
+run-dev.ps1
+.env
+.env.local

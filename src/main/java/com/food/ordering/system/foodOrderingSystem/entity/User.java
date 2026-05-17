@@ -1,4 +1,4 @@
-package com.food.ordering.system.foodOrderingSystem.enity;
+package com.food.ordering.system.foodOrderingSystem.entity;
 
 
 import jakarta.persistence.*;
@@ -13,8 +13,14 @@ public class User {
     private Long id;
 
     private String name;
+
+    @Column(unique = true, nullable = false)
     private String email;
+
+    @Column(nullable = false)
     private String password;
 
-    private String role; // USER / ADMIN
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Role role = Role.USER;
 }

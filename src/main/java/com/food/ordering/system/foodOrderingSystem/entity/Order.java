@@ -1,4 +1,4 @@
-package com.food.ordering.system.foodOrderingSystem.enity;
+package com.food.ordering.system.foodOrderingSystem.entity;
 
 
 import jakarta.persistence.*;
@@ -15,7 +15,13 @@ public class Order {
     private Long id;
 
     private Double totalAmount;
-    private String status;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private OrderStatus status;
+
+    private String deliveryAddress;
+    private String phone;
 
     private LocalDateTime createdAt;
 

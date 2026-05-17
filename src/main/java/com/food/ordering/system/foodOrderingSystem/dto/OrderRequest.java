@@ -6,6 +6,7 @@ import java.util.List;
 
 @Data
 public class OrderRequest {
-    private Long userId;
+    private String deliveryAddress;
+    private String phone;
     private List<OrderItemRequest> items;
 }
