@@ -8,13 +8,8 @@ function Restaurants() {
 
   useEffect(() => {
     API.get("/restaurants")
-      .then((res) => {
-        console.log(res.data);
-        setRestaurants(res.data);
-      })
-      .catch((err) => {
-        console.error("Error fetching restaurants:", err);
-      });
+      .then((res) => setRestaurants(res.data))
+      .catch((err) => console.error("Error fetching restaurants:", err));
   }, []);
 
   return (
@@ -24,11 +19,12 @@ function Restaurants() {
       {restaurants.length === 0 ? (
         <p>No restaurants found</p>
       ) : (
-        <div className="grid"> {/* 🔥 IMPORTANT */}
+        <div className="grid">
           {restaurants.map((r) => (
             <div className="card" key={r.id}>
               <h3>{r.name}</h3>
               <p>{r.address}</p>
+              {r.rating != null && <p>⭐ {r.rating}</p>}
 
               <button
                 className="button"

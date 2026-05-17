@@ -1,4 +1,4 @@
-package com.food.ordering.system.foodOrderingSystem.enity;
+package com.food.ordering.system.foodOrderingSystem.entity;
 
 
 import jakarta.persistence.*;

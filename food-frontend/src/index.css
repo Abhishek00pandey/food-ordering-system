@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #f5f5f5;
+  color: #222;
 }
 
 /* Page container */
@@ -11,7 +12,7 @@ body {
   margin: auto;
 }
 
-/* Grid layout (🔥 big upgrade) */
+/* Grid layout */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -23,12 +24,12 @@ body {
   background: white;
   padding: 15px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 /* Button styling */
@@ -41,10 +42,20 @@ body {
   cursor: pointer;
   margin-top: 8px;
   font-weight: bold;
+  transition: background-color 0.15s ease, transform 0.05s ease;
 }
 
-.button:hover {
+.button:hover:not(:disabled) {
   background-color: #e60000;
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
 }
 
 /* Navbar */
@@ -66,4 +77,162 @@ body {
 
 .navbar a:hover {
   text-decoration: underline;
+}
+
+/* ---- Auth pages (Login / Register) ---- */
+.auth-wrapper {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffe4e4 0%, #f5f5f5 100%);
+}
+
+.auth-card {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 32px 28px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h2 {
+  margin: 0 0 6px 0;
+  text-align: center;
+  font-size: 26px;
+  color: #222;
+}
+
+.auth-subtitle {
+  margin: 0 0 24px 0;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-input:focus {
+  border-color: #ff4d4d;
+  box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.15);
+}
+
+.button-block {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.auth-footer {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.auth-footer a {
+  color: #ff4d4d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Secondary button (outline style) */
+.button-secondary {
+  background-color: transparent;
+  color: #222;
+  border: 1px solid #d0d0d0;
+}
+
+.button-secondary:hover:not(:disabled) {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* Dark button (admin theme) */
+.button-dark {
+  background-color: #1f2937;
+}
+
+.button-dark:hover:not(:disabled) {
+  background-color: #0f172a;
+}
+
+/* "or" divider between forms */
+.auth-divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 14px 0;
+  color: #999;
+  font-size: 13px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.auth-divider span {
+  padding: 0 12px;
+}
+
+/* "Login as admin" link styled as button */
+a.button-secondary,
+a.button-block {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* Admin login theme */
+.auth-wrapper-admin {
+  background: linear-gradient(135deg, #1f2937 0%, #4b5563 100%);
+}
+
+.auth-card-admin {
+  border-top: 4px solid #1f2937;
+  position: relative;
+}
+
+.admin-badge {
+  display: inline-block;
+  background: #1f2937;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
 }
