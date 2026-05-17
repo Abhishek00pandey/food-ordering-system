@@ -1,0 +1,13 @@
+target/
+.git/
+.gitignore
+.mvn/
+mvnw
+mvnw.cmd
+food-frontend/
+HELP.md
+run-dev.ps1
+run-dev.ps1.example
+.idea/
+*.iml
+.vscode/
