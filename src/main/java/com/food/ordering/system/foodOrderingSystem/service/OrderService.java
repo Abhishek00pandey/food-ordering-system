@@ -1,6 +1,4 @@
 package com.food.ordering.system.foodOrderingSystem.service;
-
-
 import com.food.ordering.system.foodOrderingSystem.dto.OrderItemRequest;
 import com.food.ordering.system.foodOrderingSystem.dto.OrderRequest;
 import com.food.ordering.system.foodOrderingSystem.enity.FoodItem;
@@ -32,10 +30,11 @@ public class OrderService {
     @Autowired
     private OrderItemRepository orderItemRepository;
 
-    public Order placeOrder(OrderRequest request) {
+    public Order placeOrderByEmail(String email, OrderRequest request) {
 
-        User user = userRepository.findById(request.getUserId())
+        User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new RuntimeException("User not found"));
+
 
         Order order = new Order();
         order.setUser(user);
@@ -65,7 +64,8 @@ public class OrderService {
         savedOrder.setTotalAmount(total);
         return orderRepository.save(savedOrder);
 
-        }
+    }
+
     public List<Order> getOrdersByUser(Long userId) {
         return orderRepository.findByUserId(userId);
     }
