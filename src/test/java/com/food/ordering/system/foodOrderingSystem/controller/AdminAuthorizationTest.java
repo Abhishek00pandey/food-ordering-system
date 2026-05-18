@@ -92,4 +92,33 @@ class AdminAuthorizationTest {
         mockMvc.perform(get("/api/restaurants"))
                 .andExpect(status().isUnauthorized());
     }
+
+    @Test
+    void userCannotCreateLocation() throws Exception {
+        mockMvc.perform(post("/api/locations")
+                        .header("Authorization", "Bearer " + userToken)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("""
+                                {"name":"Hanumakonda","label":"Ywca, Ashoka Rd, Hanumakonda","sortOrder":1}
+                                """))
+                .andExpect(status().isForbidden());
+    }
+
+    @Test
+    void adminCanCreateLocation() throws Exception {
+        mockMvc.perform(post("/api/locations")
+                        .header("Authorization", "Bearer " + adminToken)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("""
+                                {"name":"Warangal","label":"Hunter Rd, Warangal","sortOrder":2}
+                                """))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    void anyAuthenticatedUserCanListLocations() throws Exception {
+        mockMvc.perform(get("/api/locations")
+                        .header("Authorization", "Bearer " + userToken))
+                .andExpect(status().isOk());
+    }
 }

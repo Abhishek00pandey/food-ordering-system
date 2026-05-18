@@ -34,6 +34,8 @@ function Navbar() {
         <>
           <Link to="/admin">Admin Dashboard</Link>
           <Link to="/admin/restaurants">Restaurants</Link>
+          <Link to="/admin/locations">Locations</Link>
+          <Link to="/admin/import">Import</Link>
           <Link to="/admin/orders">Orders</Link>
           <Link to="/admin/users">Users</Link>
         </>

@@ -1,0 +1,676 @@
+{
+  "restaurants": [
+    {
+      "name": "Carnatic Cafe",
+      "address": "Shivalik Main Rd, Malviya Nagar",
+      "rating": 4.5,
+      "locationName": "Malviya Nagar",
+      "menu": [
+        {
+          "name": "Masala Dosa",
+          "price": 190,
+          "description": "Crispy rice crepe with spiced potato filling, sambar and chutneys",
+          "image_url": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=400",
+          "category": "South Indian",
+          "available": true
+        },
+        {
+          "name": "Mysore Bonda",
+          "price": 120,
+          "description": "Deep-fried savoury dumplings with coconut chutney",
+          "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+          "category": "South Indian",
+          "available": true
+        },
+        {
+          "name": "Filter Coffee",
+          "price": 80,
+          "description": "Traditional South Indian decoction coffee with frothed milk",
+          "image_url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400",
+          "category": "Beverages",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Rose Cafe",
+      "address": "Westend Marg, Malviya Nagar",
+      "rating": 4.3,
+      "locationName": "Malviya Nagar",
+      "menu": [
+        {
+          "name": "Wood-fired Margherita Pizza",
+          "price": 450,
+          "description": "San Marzano tomato, fresh mozzarella and basil on thin crust",
+          "image_url": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400",
+          "category": "Pizza",
+          "available": true
+        },
+        {
+          "name": "Pesto Penne",
+          "price": 420,
+          "description": "Penne tossed in basil-pine nut pesto with parmesan",
+          "image_url": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+          "category": "Pasta",
+          "available": true
+        },
+        {
+          "name": "Iced Latte",
+          "price": 220,
+          "description": "Double-shot espresso with cold milk and ice",
+          "image_url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400",
+          "category": "Beverages",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Saravana Bhavan",
+      "address": "Geetanjali Enclave, Malviya Nagar",
+      "rating": 4.4,
+      "locationName": "Malviya Nagar",
+      "menu": [
+        {
+          "name": "Rava Idli",
+          "price": 140,
+          "description": "Steamed semolina cakes served with sambar and chutney",
+          "image_url": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=400",
+          "category": "South Indian",
+          "available": true
+        },
+        {
+          "name": "Onion Uttapam",
+          "price": 180,
+          "description": "Thick rice pancake topped with onions and green chilli",
+          "image_url": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=400",
+          "category": "South Indian",
+          "available": true
+        },
+        {
+          "name": "Mini Tiffin",
+          "price": 280,
+          "description": "Idli, vada, dosa, pongal and upma sampler",
+          "image_url": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=400",
+          "category": "Thali",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Big Chill Cafe",
+      "address": "Select Citywalk Mall, Saket",
+      "rating": 4.4,
+      "locationName": "Saket",
+      "menu": [
+        {
+          "name": "Chicken Lasagne",
+          "price": 650,
+          "description": "Layered pasta with chicken ragu, bechamel and mozzarella",
+          "image_url": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+          "category": "Italian",
+          "available": true
+        },
+        {
+          "name": "Death by Chocolate",
+          "price": 450,
+          "description": "Chocolate cake, mousse and ganache stacked layers",
+          "image_url": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400",
+          "category": "Dessert",
+          "available": true
+        },
+        {
+          "name": "Pesto Penne",
+          "price": 575,
+          "description": "Penne in basil pesto with sun-dried tomatoes and olives",
+          "image_url": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+          "category": "Pasta",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Punjab Grill",
+      "address": "Select Citywalk Mall, Saket",
+      "rating": 4.5,
+      "locationName": "Saket",
+      "menu": [
+        {
+          "name": "Dal Punjab Grill",
+          "price": 495,
+          "description": "Signature slow-cooked black dal with butter and cream",
+          "image_url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400",
+          "category": "Main Course",
+          "available": true
+        },
+        {
+          "name": "Butter Chicken",
+          "price": 695,
+          "description": "Tandoor-grilled chicken in tomato-cream gravy",
+          "image_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400",
+          "category": "Main Course",
+          "available": true
+        },
+        {
+          "name": "Lachha Paratha",
+          "price": 95,
+          "description": "Flaky multi-layered tandoor-baked paratha",
+          "image_url": "https://images.unsplash.com/photo-1619894991209-9f9694be045a?w=400",
+          "category": "Breads",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Imly",
+      "address": "Select Citywalk Mall, Saket",
+      "rating": 4.2,
+      "locationName": "Saket",
+      "menu": [
+        {
+          "name": "Pani Puri",
+          "price": 150,
+          "description": "Crisp puris filled with spiced potato and tamarind water",
+          "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+          "category": "Chaat",
+          "available": true
+        },
+        {
+          "name": "Aloo Tikki Chaat",
+          "price": 180,
+          "description": "Crispy potato patties topped with chutneys and curd",
+          "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+          "category": "Chaat",
+          "available": true
+        },
+        {
+          "name": "Raj Kachori",
+          "price": 220,
+          "description": "Giant hollow puri stuffed with sprouts, curd and chutneys",
+          "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+          "category": "Chaat",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Moti Mahal Delux",
+      "address": "Central Market, Lajpat Nagar",
+      "rating": 4.4,
+      "locationName": "Lajpat Nagar",
+      "menu": [
+        {
+          "name": "Butter Chicken",
+          "price": 525,
+          "description": "The original Delhi butter chicken in rich tomato-cream gravy",
+          "image_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400",
+          "category": "Main Course",
+          "available": true
+        },
+        {
+          "name": "Dal Makhani",
+          "price": 395,
+          "description": "Black urad dal slow-cooked overnight with cream and butter",
+          "image_url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400",
+          "category": "Main Course",
+          "available": true
+        },
+        {
+          "name": "Tandoori Chicken (Full)",
+          "price": 650,
+          "description": "Whole chicken marinated in yogurt and spices, char-grilled in tandoor",
+          "image_url": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400",
+          "category": "Tandoor",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Veg Gulati",
+      "address": "Pandara Road Market, Lajpat Nagar",
+      "rating": 4.3,
+      "locationName": "Lajpat Nagar",
+      "menu": [
+        {
+          "name": "Paneer Lababdar",
+          "price": 425,
+          "description": "Cottage cheese cubes in tomato-cashew gravy with kasuri methi",
+          "image_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400",
+          "category": "Main Course",
+          "available": true
+        },
+        {
+          "name": "Stuffed Kulcha",
+          "price": 125,
+          "description": "Tandoor-baked bread stuffed with spiced potatoes and onions",
+          "image_url": "https://images.unsplash.com/photo-1619894991209-9f9694be045a?w=400",
+          "category": "Breads",
+          "available": true
+        },
+        {
+          "name": "Veg Biryani",
+          "price": 350,
+          "description": "Aromatic basmati rice layered with seasonal vegetables and saffron",
+          "image_url": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400",
+          "category": "Rice",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Bikanervala",
+      "address": "Central Market, Lajpat Nagar",
+      "rating": 4.2,
+      "locationName": "Lajpat Nagar",
+      "menu": [
+        {
+          "name": "Chole Bhature",
+          "price": 220,
+          "description": "Spicy chickpea curry with two fluffy fried breads",
+          "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+          "category": "Indian",
+          "available": true
+        },
+        {
+          "name": "Rasgulla (2 pcs)",
+          "price": 80,
+          "description": "Soft cottage cheese balls in light sugar syrup",
+          "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=400",
+          "category": "Sweets",
+          "available": true
+        },
+        {
+          "name": "Samosa Chaat",
+          "price": 120,
+          "description": "Crushed samosas topped with chole, curd and chutneys",
+          "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+          "category": "Chaat",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Wenger's",
+      "address": "A-16, Connaught Place",
+      "rating": 4.6,
+      "locationName": "Connaught Place",
+      "menu": [
+        {
+          "name": "Chocolate Pastry",
+          "price": 120,
+          "description": "Classic chocolate sponge pastry since 1926",
+          "image_url": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400",
+          "category": "Bakery",
+          "available": true
+        },
+        {
+          "name": "Veg Patty",
+          "price": 65,
+          "description": "Flaky puff pastry stuffed with spiced potato-pea filling",
+          "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+          "category": "Snacks",
+          "available": true
+        },
+        {
+          "name": "Black Forest Slice",
+          "price": 180,
+          "description": "Chocolate sponge with cherries, kirsch and whipped cream",
+          "image_url": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400",
+          "category": "Bakery",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "United Coffee House",
+      "address": "E-15, Connaught Place",
+      "rating": 4.5,
+      "locationName": "Connaught Place",
+      "menu": [
+        {
+          "name": "Veg Au Gratin",
+          "price": 450,
+          "description": "Vegetables baked in white sauce with bubbling cheese crust",
+          "image_url": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+          "category": "Continental",
+          "available": true
+        },
+        {
+          "name": "Murgh Tandoori Cocktail",
+          "price": 485,
+          "description": "Bite-sized tandoori chicken pieces with mint chutney",
+          "image_url": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400",
+          "category": "Starters",
+          "available": true
+        },
+        {
+          "name": "Sizzling Brownie",
+          "price": 325,
+          "description": "Warm chocolate brownie with vanilla ice cream on a hot plate",
+          "image_url": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400",
+          "category": "Dessert",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Kake Da Hotel",
+      "address": "7, Municipal Market, Connaught Place",
+      "rating": 4.4,
+      "locationName": "Connaught Place",
+      "menu": [
+        {
+          "name": "Butter Chicken",
+          "price": 480,
+          "description": "House-style butter chicken with smoky tandoori notes",
+          "image_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400",
+          "category": "Main Course",
+          "available": true
+        },
+        {
+          "name": "Dal Fry",
+          "price": 220,
+          "description": "Yellow dal tempered with cumin, garlic and tomato",
+          "image_url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400",
+          "category": "Main Course",
+          "available": true
+        },
+        {
+          "name": "Tandoori Roti",
+          "price": 35,
+          "description": "Whole wheat bread baked in clay tandoor",
+          "image_url": "https://images.unsplash.com/photo-1619894991209-9f9694be045a?w=400",
+          "category": "Breads",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Khan Chacha",
+      "address": "Khan Market, Lodhi Estate",
+      "rating": 4.5,
+      "locationName": "Khan Market",
+      "menu": [
+        {
+          "name": "Chicken Tikka Roll",
+          "price": 275,
+          "description": "Tandoori chicken tikka wrapped in roomali with mint chutney",
+          "image_url": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400",
+          "category": "Rolls",
+          "available": true
+        },
+        {
+          "name": "Mutton Seekh Roll",
+          "price": 325,
+          "description": "Spiced minced mutton seekh kebab rolled in flaky paratha",
+          "image_url": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400",
+          "category": "Rolls",
+          "available": true
+        },
+        {
+          "name": "Paneer Tikka Roll",
+          "price": 245,
+          "description": "Char-grilled paneer with onions and bell peppers in a roll",
+          "image_url": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400",
+          "category": "Rolls",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Mamagoto",
+      "address": "Middle Lane, Khan Market",
+      "rating": 4.4,
+      "locationName": "Khan Market",
+      "menu": [
+        {
+          "name": "Pad Thai Noodles",
+          "price": 525,
+          "description": "Rice noodles wok-tossed with peanuts, lime and tamarind",
+          "image_url": "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=400",
+          "category": "Asian",
+          "available": true
+        },
+        {
+          "name": "Dimsum Basket",
+          "price": 395,
+          "description": "Assorted steamed dumplings with chilli-soy dip",
+          "image_url": "https://images.unsplash.com/photo-1626804475297-41608ea09aeb?w=400",
+          "category": "Starters",
+          "available": true
+        },
+        {
+          "name": "Thai Red Curry",
+          "price": 545,
+          "description": "Coconut curry with vegetables, served with jasmine rice",
+          "image_url": "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=400",
+          "category": "Asian",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "SodaBottleOpenerWala",
+      "address": "Middle Lane, Khan Market",
+      "rating": 4.3,
+      "locationName": "Khan Market",
+      "menu": [
+        {
+          "name": "Berry Pulao",
+          "price": 495,
+          "description": "Parsi-style pulao with cranberries, cashews and saffron",
+          "image_url": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400",
+          "category": "Rice",
+          "available": true
+        },
+        {
+          "name": "Chicken Dhansak",
+          "price": 575,
+          "description": "Slow-cooked Parsi lentil curry with chicken and brown rice",
+          "image_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400",
+          "category": "Main Course",
+          "available": true
+        },
+        {
+          "name": "Bun Maska",
+          "price": 165,
+          "description": "Soft buttered bun with cutting chai",
+          "image_url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400",
+          "category": "Snacks",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Social",
+      "address": "Hauz Khas Village",
+      "rating": 4.3,
+      "locationName": "Hauz Khas",
+      "menu": [
+        {
+          "name": "Trippy Pizza",
+          "price": 495,
+          "description": "Thin crust pizza with smoked chicken, jalapenos and bell peppers",
+          "image_url": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400",
+          "category": "Pizza",
+          "available": true
+        },
+        {
+          "name": "LIIT Pasta",
+          "price": 425,
+          "description": "Long Island ice-tea inspired pasta with spicy arrabbiata sauce",
+          "image_url": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+          "category": "Pasta",
+          "available": true
+        },
+        {
+          "name": "Butter Garlic Naan Pizza",
+          "price": 350,
+          "description": "Naan base topped with garlic butter, cheese and herbs",
+          "image_url": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400",
+          "category": "Pizza",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Naivedyam",
+      "address": "Hauz Khas Village",
+      "rating": 4.4,
+      "locationName": "Hauz Khas",
+      "menu": [
+        {
+          "name": "Ghee Roast Dosa",
+          "price": 240,
+          "description": "Extra-crispy dosa roasted with pure ghee",
+          "image_url": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=400",
+          "category": "South Indian",
+          "available": true
+        },
+        {
+          "name": "Special Thali",
+          "price": 420,
+          "description": "Sambar, rasam, two curries, rice, papad, curd and dessert",
+          "image_url": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=400",
+          "category": "Thali",
+          "available": true
+        },
+        {
+          "name": "Banana Leaf Meal",
+          "price": 450,
+          "description": "Traditional meal served on banana leaf with multiple accompaniments",
+          "image_url": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=400",
+          "category": "Thali",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Coast Cafe",
+      "address": "Hauz Khas Village",
+      "rating": 4.5,
+      "locationName": "Hauz Khas",
+      "menu": [
+        {
+          "name": "Chettinad Chicken",
+          "price": 495,
+          "description": "Fiery South Indian chicken curry with black pepper and curry leaves",
+          "image_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400",
+          "category": "Main Course",
+          "available": true
+        },
+        {
+          "name": "Kerala Fish Curry",
+          "price": 550,
+          "description": "Coconut and kokum-based fish curry with steamed rice",
+          "image_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400",
+          "category": "Main Course",
+          "available": true
+        },
+        {
+          "name": "Appam with Stew",
+          "price": 385,
+          "description": "Lacy rice hoppers with vegetable coconut stew",
+          "image_url": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=400",
+          "category": "Breakfast",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Paranthe Wali Gali",
+      "address": "Gali Paranthe Wali, Chandni Chowk",
+      "rating": 4.6,
+      "locationName": "Chandni Chowk",
+      "menu": [
+        {
+          "name": "Aloo Parantha",
+          "price": 120,
+          "description": "Whole-wheat parantha stuffed with spiced potato, fried in pure ghee",
+          "image_url": "https://images.unsplash.com/photo-1619894991209-9f9694be045a?w=400",
+          "category": "Breads",
+          "available": true
+        },
+        {
+          "name": "Paneer Parantha",
+          "price": 150,
+          "description": "Parantha stuffed with crumbled paneer and green chillies",
+          "image_url": "https://images.unsplash.com/photo-1619894991209-9f9694be045a?w=400",
+          "category": "Breads",
+          "available": true
+        },
+        {
+          "name": "Rabri Parantha",
+          "price": 180,
+          "description": "Iconic sweet parantha stuffed with thickened sweet milk",
+          "image_url": "https://images.unsplash.com/photo-1619894991209-9f9694be045a?w=400",
+          "category": "Breads",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Karim's",
+      "address": "Gali Kababian, Jama Masjid, Chandni Chowk",
+      "rating": 4.5,
+      "locationName": "Chandni Chowk",
+      "menu": [
+        {
+          "name": "Mutton Korma",
+          "price": 450,
+          "description": "Slow-cooked mutton in rich onion-yogurt gravy",
+          "image_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400",
+          "category": "Main Course",
+          "available": true
+        },
+        {
+          "name": "Chicken Jahangiri",
+          "price": 420,
+          "description": "Signature creamy chicken curry from the royal Mughlai kitchen",
+          "image_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400",
+          "category": "Main Course",
+          "available": true
+        },
+        {
+          "name": "Mutton Burra Kebab",
+          "price": 490,
+          "description": "Marinated mutton chops char-grilled in tandoor",
+          "image_url": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400",
+          "category": "Tandoor",
+          "available": true
+        }
+      ]
+    },
+    {
+      "name": "Natraj Dahi Bhalla",
+      "address": "1396 Main Rd, Chandni Chowk",
+      "rating": 4.5,
+      "locationName": "Chandni Chowk",
+      "menu": [
+        {
+          "name": "Dahi Bhalla",
+          "price": 120,
+          "description": "Soft lentil dumplings in sweet curd, topped with chutneys",
+          "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+          "category": "Chaat",
+          "available": true
+        },
+        {
+          "name": "Aloo Tikki",
+          "price": 100,
+          "description": "Pan-fried potato patties with tangy chutneys",
+          "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+          "category": "Chaat",
+          "available": true
+        },
+        {
+          "name": "Papdi Chaat",
+          "price": 130,
+          "description": "Crisp wafers topped with curd, chutneys, potato and pomegranate",
+          "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+          "category": "Chaat",
+          "available": true
+        }
+      ]
+    }
+  ]
+}

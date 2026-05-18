@@ -11,6 +11,16 @@ function AdminDashboard() {
           <Link className="button" to="/admin/restaurants">Manage</Link>
         </div>
         <div className="card">
+          <h3>Locations</h3>
+          <p>Manage the locations users can pick from.</p>
+          <Link className="button" to="/admin/locations">Manage</Link>
+        </div>
+        <div className="card">
+          <h3>Bulk Import</h3>
+          <p>Import restaurants and menus from a JSON file.</p>
+          <Link className="button" to="/admin/import">Import</Link>
+        </div>
+        <div className="card">
           <h3>Orders</h3>
           <p>View all orders and update status.</p>
           <Link className="button" to="/admin/orders">Manage</Link>
