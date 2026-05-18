@@ -23,7 +23,14 @@ public class RestaurantController {
     }
 
     @GetMapping
-    public List<Restaurant> getAllRestaurants() {
+    public List<Restaurant> getAllRestaurants(@RequestParam(required = false) Long locationId,
+                                              @RequestParam(required = false) String search) {
+        if (search != null && !search.trim().isEmpty()) {
+            return restaurantService.searchRestaurants(search, locationId);
+        }
+        if (locationId != null) {
+            return restaurantService.getRestaurantsByLocation(locationId);
+        }
         return restaurantService.getAllRestaurants();
     }
 

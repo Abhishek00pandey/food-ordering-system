@@ -13,6 +13,8 @@ import AdminRestaurants from "./pages/admin/AdminRestaurants";
 import AdminMenu from "./pages/admin/AdminMenu";
 import AdminOrders from "./pages/admin/AdminOrders";
 import AdminUsers from "./pages/admin/AdminUsers";
+import AdminLocations from "./pages/admin/AdminLocations";
+import AdminImport from "./pages/admin/AdminImport";
 
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
         <Route path="/admin/menu/:restaurantId" element={<PrivateRoute adminOnly><AdminMenu /></PrivateRoute>} />
         <Route path="/admin/orders" element={<PrivateRoute adminOnly><AdminOrders /></PrivateRoute>} />
         <Route path="/admin/users" element={<PrivateRoute adminOnly><AdminUsers /></PrivateRoute>} />
+        <Route path="/admin/locations" element={<PrivateRoute adminOnly><AdminLocations /></PrivateRoute>} />
+        <Route path="/admin/import" element={<PrivateRoute adminOnly><AdminImport /></PrivateRoute>} />
       </Routes>
     </BrowserRouter>
   );
